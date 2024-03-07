@@ -1,0 +1,63 @@
+---
+
+import Link from "@/components/icons/Link.astro";
+---
+
+
+<section 
+  
+  class="w-full grid auto-rows-[260px] grid-cols-8 gap-4">
+
+  
+
+  <div
+    class="row-span-1 col-span-8 lg:row-span-2 lg:col-span-4 rounded-3xl overflow-hidden relative flex flex-col py-14 items-center justify-between "
+  >
+    <div class="flex flex-col items-center">
+      <img
+        class="w-40 h-10 object-contain z-[1]"
+        src="logo-region.webp"
+        alt="DD360"
+      /><p
+        class="text-center text-lg text-gray-200 leading-5 mt-2 z-[1] font-medium"
+      >
+        Front-end Developer<br />Mar. 2021 — Jun. 2021
+      </p>
+    </div><a
+      class="py-2 px-4 bg-secondary-blue text-gray-300 font-medium rounded-lg flex items-center gap-2 z-[1] relative transition 
+      hover:scale-110"
+      href="https://www.regionglobal.com/"
+      target="_blank"
+      title="Region Global"><span>Visit RG</span><Link /></a
+    ><img
+      class="w-full h-full object-cover absolute left-0 top-0 z-0 filter brightness-50"
+      src="mantenemos.webp"
+      alt="Two people workin in a laptop"
+    />
+  </div>
+  <div
+    class="row-span-1 col-span-8 lg:row-span-2 lg:col-span-4 rounded-3xl overflow-hidden relative flex flex-col py-14 items-center justify-between">
+    <div class="flex flex-col items-center">
+      <img
+        class="w-40 h-10 object-cover z-[1] false"
+        src="lenovo-logo-masthead.png"
+        alt="Nolab"
+      /><p
+        class="text-center text-gray-200 text-lg leading-5 mt-2 z-[1] font-medium"
+      >
+        FullStack Developer Mid<br />Oct. 2021 — Current
+      </p>
+    </div>
+    <a
+      class="py-2 px-4 bg-secondary-blue text-gray-300 font-medium rounded-lg flex items-center gap-2 z-[1] relative transition 
+      hover:scale-110"
+      href="https://www.lenovo.com/"
+      target="_blank"
+      title="Lenovo"><span>Visit Lenovo</span><Link /></a
+    ><img
+      class="w-full h-full object-cover absolute left-0 top-0 z-0 filter brightness-50"
+      src="lenovo.jpg"
+      alt="Lenovo building"
+    />
+  </div>
+</section>

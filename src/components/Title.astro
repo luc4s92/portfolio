@@ -1,0 +1,16 @@
+---
+interface Props {
+	title: string;
+	subtitle: string;
+	id: string;
+	
+}
+
+const { title, subtitle, id} = Astro.props;
+---
+
+
+<div id={id} class="flex flex-col items-center">
+	<h2 class="text-4xl sm:text-6xl text-gray-200 font-bold tracking-wider ">{title}</h2>
+<h4 class="text-xl text-gray-200 font-semibold tracking-wider pt-0">{subtitle}</h4>
+</div>

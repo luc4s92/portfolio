@@ -1,0 +1,95 @@
+---
+import Download from "./icons/Download.astro";
+import Github from "./icons/Github.astro";
+import Linkedin from "./icons/Linkedin.astro";
+import Mail from "./icons/Mail.astro";
+---
+
+<section class="w-full grid auto-rows-[190px] grid-cols-6 gap-4">
+  <div
+    class="row-span-2 col-span-6 rounded-3xl relative flex flex-col overflow-hidden gap-10 justify-end p-6
+      xl:col-span-2 lg:items-end sm:flex-row lg:p-10"
+  >
+    <div
+      class="absolute bg-primary-blue bg-hero-pattern bg-repeat top-0 left-0 bottom-0 right-0 z-[2] flex flex-col items-center lg:items-start"
+    >
+      <img
+        class="rounded-full shadow-lg size-32 ml-4 mt-6 border-[#6591cc] border-4"
+        src="/luk.jpg"
+        alt="Lucas González"
+      />
+      <div class="flex flex-col mt-10 mx-4">
+        <span class="text-4xl font-bold leading-7 text-[#e3ecf6]"
+          >Lucas Gonzalez</span
+        >
+        <span class="text-2xl font-medium leading-9 text-[#e3ecf6]"
+          >Front-end Developer</span
+        >
+      </div>
+    </div>
+    <div
+      class="w-full flex-col z-[2] absolute left-0 bottom-0 flex items-center leading-4 p-5 text-moonlit bg-[#091d36]/80"
+    >
+      <div class="flex flex-wrap items-center gap-2 mt-1 lg:gap-3">
+        <a
+          class="flex items-center font-medium px-3 py-2 rounded-lg gap-2 bg-[#cddff0] relative transition
+            hover:scale-110"
+          href="https://github.com/luc4s92"
+          target="_blank"
+          rel="noreferrer"
+          title="GitHub"
+        >
+          <Github />
+          <span class="hidden lg:flex">GitHub</span></a
+        >
+        <a
+          class="flex items-center font-medium relative transition
+            hover:scale-110 px-4 py-2 rounded-lg gap-2 bg-[#cddff0]"
+          href="https://www.linkedin.com/in/lucas-gonzalez-678631124/"
+          target="_blank"
+          rel="noreferrer"
+          title="LinkedIn"
+        >
+          <Linkedin />
+          <span class="hidden lg:flex">LinkedIn</span>
+        </a>
+        <a
+          class="flex items-center font-medium relative transition
+            hover:scale-110 px-4 py-2 rounded-lg gap-2 bg-[#cddff0]"
+          href="mailto:luc4s92.g@gmail.com"
+          title="luc4s92.g@gmail.com"
+          >
+          <Mail/>
+          <span class="hidden lg:flex">Email</span></a
+        >
+      </div>
+    </div>
+  </div>
+  <div
+    class="row-span-1 col-span-6 rounded-3xl bg-primary-blue relative flex flex-col overflow-hidden border-2 gap-2 border-transparent p-6 h-full xl:col-span-4 lg:py-4"
+  >
+    <h2 class="text-2xl font-bold z-[1] text-gray-300">About</h2>
+    <p class="text-base w-full z-[1] text-[#e3ecf6]">
+      As an experienced web developer, I specialize in crafting intuitive and
+      engaging user experiences through the design, development, and maintenance
+      of front-end web applications.
+    </p>
+  </div><div
+    class="row-span-1 col-span-3 rounded-3xl relative flex flex-col
+      overflow-hidden border-2 border-transparent gap-2 items-center
+      justify-center dark:bg-raisin-black xl:col-span-2 bg-secondary-blue"
+  >
+    <p class="text-7xl z-[1] font-bold flex items-center gap-1 text-[#e3ecf6]">
+      <span>+</span><span>2</span>
+    </p><p class="text-sm font-semibold max-w-fit z-[1] text-gray-300">
+      Years of experience
+    </p>
+  </div>
+  <div
+    class="row-span-1 col-span-3 rounded-3xl  bg-hero-pattern overflow-hidden xl:col-span-2 flex items-center justify-center"
+  >
+    
+    <img src="arg.jpg" alt="" class="w-full h-full relative filter brightness-50"> 
+    <h4 class="absolute text-center text-3xl font-bold text-gray-200">Argentina, </br>Tandil </h4>
+  </div>
+</section>
