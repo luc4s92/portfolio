@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.74 41.06"><defs><style>.cls-1{font-size:48px;fill:#6b7280;font-family:QuantumRegular, Quantum;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><text class="cls-1" transform="translate(0 40.49)">L</text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.74 41.06">
+    <defs>
+        <style>
+            .cls-1 {
+                font-size: 48px;
+                font-family: QuantumRegular, Quantum;
+                fill: #111111; /* Color por defecto */
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .cls-1 {
+                    fill: #ffffff; /* Cambiar a blanco en tema oscuro */
+                }
+            }
+
+            @media (prefers-color-scheme: light) {
+                .cls-1 {
+                    fill: #111111; /* Cambiar a negro en tema claro */
+                }
+            }
+        </style>
+    </defs>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="Capa_1-2" data-name="Capa 1">
+            <text class="cls-1" transform="translate(0 40.49)">L</text>
+        </g>
+    </g>
+</svg>
