@@ -1,17 +1,17 @@
 ---
 interface Props {
-  checkActive?: boolean
-  href: string
-  class?: string
+  checkActive?: boolean;
+  href: string;
+  class?: string;
 }
 
-const { currentLocale = "es" } = Astro
+const { currentLocale = "es" } = Astro;
 const {
   href,
   class: className,
   checkActive = true,
   ...restOfProps
-} = Astro.props
+} = Astro.props;
 
 const LOCALES: Record<string, { code: string; baseHref: string }> = {
   ca: {
@@ -22,23 +22,30 @@ const LOCALES: Record<string, { code: string; baseHref: string }> = {
     code: "es",
     baseHref: "",
   },
-}
+};
 
-const baseHref = LOCALES[currentLocale].baseHref
+const baseHref = LOCALES[currentLocale].baseHref;
 
-const currentPath = Astro.url.pathname
-const destination = `${baseHref}${href}`
-const isActive = currentPath === destination && checkActive
+const currentPath = Astro.url.pathname;
+const destination = `${baseHref}${href}`;
+const isActive = currentPath === destination && checkActive;
 ---
 
 <a
   href={destination}
   class:list={[
     className,
-    "border-b-2",
+    "border-b-2 imagen-logo",
     isActive ? "border-white" : "border-transparent",
   ]}
   {...restOfProps}
 >
   <slot />
 </a>
+
+<style>
+  .imagen-logo:hover {
+    filter: drop-shadow(10px 5px 10px white);
+    transition: ease 0.5s;
+  }
+</style>

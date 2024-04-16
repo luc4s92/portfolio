@@ -1,6 +1,8 @@
 ---
+import BgSite from "@/components/BgSite.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
+import NoiseBg from "@/components/NoiseBg.astro";
 
 interface Props {
   title: string;
@@ -31,6 +33,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-primary-black bg-hero-pattern">
+    <NoiseBg />
     <Header />
     <slot />
     <Footer />
