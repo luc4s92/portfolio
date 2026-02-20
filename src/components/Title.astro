@@ -8,11 +8,30 @@ interface Props {
 const { title, subtitle, id } = Astro.props;
 ---
 
-<div id={id} class="flex flex-col items-center">
-  <h2 class="text-4xl sm:text-6xl text-gray-200 font-bold tracking-wider">
+<div id={id} class="flex flex-col items-center relative">
+  <h2 class="text-4xl sm:text-6xl text-purple-primary font-bold tracking-wider">
     {title}
   </h2>
-  <p class="text-xl text-gray-200 font-semibold tracking-wider pt-1">
+  <div class="gradient-blob-1"></div>
+  <p class="text-xl text-purple-secundary font-semibold tracking-wider pt-1">
     {subtitle}
   </p>
 </div>
+<style>
+  .gradient-blob-1 {
+    position: absolute;
+    bottom: -200px;
+    left: -100px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(
+      circle at center,
+      rgba(123, 95, 201, 0.6) 0%,
+      rgba(90, 62, 166, 0.4) 40%,
+      transparent 70%
+    );
+    filter: blur(160px);
+    z-index: -10;
+    pointer-events: none;
+  }
+</style>

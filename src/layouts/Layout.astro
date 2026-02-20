@@ -47,8 +47,7 @@ const { title } = Astro.props;
       gtag("config", "G-9DXS85MZKZ");
     </script>
   </head>
-  <body class="bg-primary-black bg-hero-pattern">
-    <NoiseBg />
+  <body class="bg-primary-black">
     <Header />
     <slot />
     <Footer />
@@ -68,12 +67,13 @@ const { title } = Astro.props;
     border-radius: 5px;
   }
   ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(157, 0, 255, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 5px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(138, 0, 255, 0.7);
   }
   .text__glowing:hover {
     text-shadow:
@@ -98,5 +98,14 @@ const { title } = Astro.props;
       background: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(10px);
     }
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(55, 33, 102, 0.95) 0%,
+      rgba(90, 62, 166, 0.5) 5%,
+      rgba(123, 95, 201, 0.3) 100%
+    );
   }
 </style>

@@ -11,10 +11,10 @@ import Mail from "./icons/Mail.astro";
       xl:col-span-2 lg:items-end sm:flex-row lg:p-10"
   >
     <div
-      class="absolute bg-primary-blue bg-hero-pattern bg-repeat top-0 left-0 bottom-0 right-0 z-[2] flex flex-col items-center lg:items-start"
+      class="absolute bg-purple-primary/30 bg-hero-pattern bg-repeat top-0 left-0 bottom-0 right-0 z-[2] flex flex-col items-center lg:items-start"
     >
       <img
-        class="rounded-full shadow-lg size-40 lg:size-32 ml-4 mt-6 border-[#6591cc] border-4"
+        class="rounded-full shadow-lg size-40 lg:size-32 ml-4 mt-6 border-purple-primary border-4"
         src="/luk.jpg"
         alt="Lucas González profile photo"
       />
@@ -28,7 +28,7 @@ import Mail from "./icons/Mail.astro";
       </div>
     </div>
     <div
-      class="w-full flex-col z-[2] absolute left-0 bottom-0 flex items-center leading-4 p-5 text-moonlit bg-[#091d36]/80"
+      class="w-full flex-col z-[2] absolute left-0 bottom-0 flex items-center leading-4 p-5 text-moonlit bg-purple-primary/70"
     >
       <div class="flex flex-wrap items-center gap-2 mt-1 lg:gap-3">
         <a
@@ -66,7 +66,7 @@ import Mail from "./icons/Mail.astro";
     </div>
   </div>
   <div
-    class="row-span-1 col-span-6 rounded-3xl bg-primary-blue relative flex flex-col overflow-hidden border-2 gap-2 border-transparent p-6 h-full xl:col-span-4 lg:py-4"
+    class="row-span-1 col-span-6 rounded-3xl bg-gradient-to-l from-purple-primary/40 to-purple-secundary/10 relative flex flex-col overflow-hidden border-2 gap-2 border-purple-primary p-6 h-full xl:col-span-4 lg:py-4"
   >
     <h2 class="text-2xl font-bold z-[1] text-gray-300">About</h2>
     <p class="text-base w-full z-[1] text-[#e3ecf6]">
@@ -76,17 +76,17 @@ import Mail from "./icons/Mail.astro";
     </p>
   </div><div
     class="row-span-1 col-span-3 rounded-3xl relative flex flex-col
-      overflow-hidden border-2 border-transparent gap-2 items-center
-      justify-center dark:bg-raisin-black xl:col-span-2 bg-secondary-blue"
+      overflow-hidden border-2 gap-2 items-center
+      justify-center xl:col-span-2 bg-gradient-to-l from-purple-primary/40 to-purple-secundary/10 border-purple-primary"
   >
     <p class="text-7xl z-[1] font-bold flex items-center gap-1 text-[#e3ecf6]">
-      <span>3</span>
+      <span>+4</span>
     </p><p class="text-sm font-semibold max-w-fit z-[1] text-gray-300">
       Years of experience
     </p>
   </div>
   <div
-    class="row-span-1 col-span-3 rounded-3xl bg-hero-pattern overflow-hidden xl:col-span-2 flex items-center justify-center"
+    class="row-span-1 col-span-3 rounded-3xl overflow-hidden xl:col-span-2 flex items-center justify-center border-purple-primary border-2"
   >
     <img
       src="arg.jpg"
@@ -98,3 +98,13 @@ import Mail from "./icons/Mail.astro";
     </h4>
   </div>
 </section>
+<style>
+  .b-hero-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(55, 33, 102, 0.45) 0%,
+      rgba(90, 62, 166, 0.35) 25%,
+      rgba(123, 95, 201, 0.2) 45%
+    );
+  }
+</style>
