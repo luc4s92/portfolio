@@ -9,17 +9,22 @@ import Services from "@/components/Services.astro";
 ---
 
 <Layout title="Lucas Gonzalez FrontEnd Developer">
-  <main
-    class="w-full flex flex-col gap-10 items-center max-w-5xl px-5 xl:max-w-7xl mt-[5.5rem] mx-auto"
-  >
-    <h1 class="hidden">Lucas Gonzalez FrontEnd Developer</h1>
-    <Hero />
+  <main class="w-full mt-[5.5rem]">
+    <div
+      class="flex flex-col gap-10 items-center max-w-5xl px-5 xl:max-w-7xl mx-auto w-full"
+    >
+      <h1 class="hidden">Lucas Gonzalez FrontEnd Developer</h1>
 
-    <Title id="work" title="My Experience" subtitle="Where I worked" />
-    <Experience />
-    <Title id="services" title="Services" subtitle="What I provide" />
-    <Services />
-    <Title id="skills" title="Skills" subtitle="What I know" />
-    <Skills />
+      <Hero />
+
+      <Title id="work" title="My Experience" subtitle="Where I worked" />
+      <Experience />
+
+      <Title id="services" title="Services" subtitle="What I provide" />
+      <Services />
+
+      <Title id="skills" title="Skills" subtitle="What I know" />
+      <Skills />
+    </div>
   </main>
 </Layout>

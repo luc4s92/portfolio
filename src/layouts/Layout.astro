@@ -29,7 +29,7 @@ const { title } = Astro.props;
       property="og:image"
       content="https://media.licdn.com/dms/image/C5603AQEooMS9fwGkbQ/profile-displayphoto-shrink_800_800/0/1623685496432?e=1715817600&v=beta&t=T1DUzbHfY1obf6ZM1idAB01fGc-oOpxQnHLfaNPO-RM"
     />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -54,21 +54,36 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
-  * {
+  /* Reset sólido */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Scroll smooth */
+  html {
     scroll-behavior: smooth;
   }
 
+  /* Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
+
   ::-webkit-scrollbar-track {
     background: transparent;
-    backdrop-filter: blur(10px);
-    border-radius: 5px;
   }
+
   ::-webkit-scrollbar-thumb {
     background: rgba(157, 0, 255, 0.4);
-    backdrop-filter: blur(10px);
     border-radius: 5px;
   }
 
@@ -76,10 +91,10 @@ const { title } = Astro.props;
     background: rgba(138, 0, 255, 0.7);
   }
 
+  /* Background animado aislado correctamente */
   body {
     position: relative;
-
-    overflow-x: hidden;
+    min-height: 100vh;
   }
 
   body::before {
@@ -102,6 +117,7 @@ const { title } = Astro.props;
       auto,
       60px 60px,
       60px 60px;
+
     animation: moveGrid 60s linear infinite;
   }
 
@@ -118,15 +134,7 @@ const { title } = Astro.props;
     }
   }
 
-  .text__glowing:hover {
-    text-shadow:
-      0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 40px #fff,
-      0 0 80px #fff,
-      0 0 120px #fff;
-  }
-
+  /* Header blur */
   #header-nav {
     animation: blur linear both;
     animation-timeline: scroll();
@@ -141,6 +149,16 @@ const { title } = Astro.props;
       background: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(10px);
     }
+  }
+
+  /* Glow */
+  .text__glowing:hover {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff,
+      0 0 80px #fff,
+      0 0 120px #fff;
   }
 
   .hero-gradient {
