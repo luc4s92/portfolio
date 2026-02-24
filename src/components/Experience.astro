@@ -1,12 +1,10 @@
----
-import Link from "@/components/icons/Link.astro";
----
-
-<section class="w-full grid auto-rows-[260px] grid-cols-8 gap-4">
+<section class="w-full grid grid-cols-8 gap-4 lg:auto-rows-fr lg:min-h-[600px]">
   <div
     class="row-span-1 col-span-8 lg:row-span-2 lg:col-span-4 rounded-3xl overflow-hidden relative flex flex-col py-14 items-center justify-between"
   >
-    <div class="flex flex-col items-center">
+    <div
+      class="h-full flex flex-col items-center border-2 gap-4 border-purple-primary rounded-2xl p-6 z-[1] bg-gradient-to-b from-purple-primary/10 to-purple-secundary/40"
+    >
       <img
         class="w-40 h-10 object-contain z-[1]"
         src="logo-region.webp"
@@ -16,22 +14,30 @@ import Link from "@/components/icons/Link.astro";
       >
         Front-end Developer<br />Mar. 2021 — Jun. 2021
       </p>
-    </div><a
-      class="py-2 px-4 bg-purple-primary text-gray-300 font-medium rounded-lg flex items-center gap-2 z-[1] relative transition
-      hover:scale-110"
-      href="https://www.regionglobal.com/"
-      target="_blank"
-      title="Region Global"><span>Visit RG</span><Link /></a
-    ><img
-      class="w-full h-full object-cover absolute left-0 top-0 z-0 filter brightness-50"
-      src="mantenemos.webp"
-      alt="Two people workin in a laptop"
-    />
+      <ul class="text-gray-200 flex flex-col justify-center gap-2 mt-4 z-[1]">
+        <li>
+          <p>
+            - Developed and maintained WordPress-based websites using HTML, CSS
+            and JavaScript
+          </p>
+        </li>
+        <li>
+          <p>- Implemented responsive layouts and improved UI consistency</p>
+        </li>
+        <li>
+          <p>
+            - Customized themes and components to meet business requirements
+          </p>
+        </li>
+      </ul>
+    </div>
   </div>
   <div
     class="row-span-1 col-span-8 lg:row-span-2 lg:col-span-4 rounded-3xl overflow-hidden relative flex flex-col py-14 items-center justify-between"
   >
-    <div class="flex flex-col items-center">
+    <div
+      class="flex flex-col items-center border-2 gap-4 border-purple-primary rounded-2xl p-6 z-[1] bg-gradient-to-b from-purple-primary/10 to-purple-secundary/40"
+    >
       <img
         class="w-40 h-10 object-cover z-[1] false"
         src="lenovo-logo-masthead.png"
@@ -41,17 +47,49 @@ import Link from "@/components/icons/Link.astro";
       >
         Front-end Developer <br />Oct. 2021 — Current
       </p>
+      <ul class="text-gray-200 flex flex-col justify-center gap-2 mt-4 z-[1]">
+        <li>
+          <p>
+            - Contributed to the migration from a legacy CMS to a new internal
+            content management system
+          </p>
+        </li>
+        <li>
+          <p>
+            - Built and maintained product detail pages (PDP) and high-traffic
+            landing pages
+          </p>
+        </li>
+        <li>
+          <p>
+            - Adapted and migrated legacy components into updated design system
+            components
+          </p>
+        </li>
+        <li>
+          <p>
+            - Extended and customized CSS to ensure visual consistency and
+            cross-device compatibility
+          </p>
+        </li>
+        <li>
+          <p>
+            - Ensured accessibility best practices (semantic HTML, ARIA
+            attributes, keyboard navigation)
+          </p>
+        </li>
+        <li>
+          <p>
+            - Collaborated with design and marketing teams to deliver
+            pixel-accurate implementations
+          </p>
+        </li>
+        <li>
+          <p>
+            - Supported continuous UI improvements and component standardization
+          </p>
+        </li>
+      </ul>
     </div>
-    <a
-      class="py-2 px-4 bg-purple-primary text-gray-300 font-medium rounded-lg flex items-center gap-2 z-[1] relative transition
-      hover:scale-110"
-      href="https://www.lenovo.com/"
-      target="_blank"
-      title="Lenovo"><span>Visit Lenovo</span><Link /></a
-    ><img
-      class="w-full h-full object-cover absolute left-0 top-0 z-0 filter brightness-50"
-      src="lenovo.jpg"
-      alt="Lenovo building"
-    />
   </div>
 </section>

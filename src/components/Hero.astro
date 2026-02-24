@@ -5,7 +5,7 @@ import Linkedin from "./icons/Linkedin.astro";
 import Mail from "./icons/Mail.astro";
 ---
 
-<section class="w-full grid auto-rows-[190px] grid-cols-6 gap-4">
+<section class="w-full grid auto-rows-[minmax(220px,auto)] grid-cols-6 gap-4">
   <div
     class="row-span-2 col-span-6 rounded-3xl relative flex flex-col overflow-hidden gap-10 justify-end p-6
       xl:col-span-2 lg:items-end sm:flex-row lg:p-10"
@@ -18,12 +18,14 @@ import Mail from "./icons/Mail.astro";
         src="/luk.jpg"
         alt="Lucas González profile photo"
       />
-      <div class="flex flex-col mt-10 mx-4">
-        <span class="text-4xl font-bold leading-7 text-[#e3ecf6]"
+      <div class="flex flex-col mt-2 md:mt-10 mx-4">
+        <span class="text-2xl md:text-4xl font-bold leading-7 text-[#e3ecf6]"
           >Lucas Gonzalez</span
         >
-        <span class="text-2xl font-medium leading-9 text-[#e3ecf6]"
-          >Front-end Developer</span
+        <span
+          class="mt-2 text-lg md:text-2xl font-medium leading-6 text-[#e3ecf6]"
+          ><span class="font-bold md:font-black">Frontend Developer</span> building
+          accessible and performance-driven web interfaces.</span
         >
       </div>
     </div>
@@ -70,9 +72,17 @@ import Mail from "./icons/Mail.astro";
   >
     <h2 class="text-2xl font-bold z-[1] text-gray-300">About</h2>
     <p class="text-base w-full z-[1] text-[#e3ecf6]">
-      As an experienced web developer, I specialize in crafting intuitive and
-      engaging user experiences through the design, development, and maintenance
-      of front-end web applications.
+      I’m a frontend developer focused on building accessible, scalable and
+      maintainable web interfaces.
+    </p>
+    <p class="text-base w-full z-[1] text-[#e3ecf6]">
+      I work closely with design and business teams to deliver high-quality
+      landing pages and product detail experiences, ensuring performance,
+      consistency and accessibility across platforms.
+    </p>
+    <p class="text-base w-full z-[1] text-[#e3ecf6]">
+      I’m particularly interested in component architecture, UI systems and
+      continuous improvement of frontend workflows.
     </p>
   </div><div
     class="row-span-1 col-span-3 rounded-3xl relative flex flex-col
