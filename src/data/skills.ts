@@ -12,7 +12,8 @@ export interface SkillGroup {
 export const skills: SkillGroup[] = [
   {
     title: "Core Engineering",
-    description: "JavaScript (ES6+) · TypeScript · React",
+    description:
+      "JavaScript (ES6+) · TypeScript · React · Component-driven development",
     skills: [
       {
         name: "JavaScript",
@@ -30,7 +31,7 @@ export const skills: SkillGroup[] = [
   },
   {
     title: "Modern Frameworks",
-    description: "Next.js · Astro · SSR / SSG fundamentals · Vite",
+    description: "Next.js · Astro · SSR / SSG · Vite · Modern build tooling",
     skills: [
       {
         name: "Next.js",
@@ -46,13 +47,13 @@ export const skills: SkillGroup[] = [
   {
     title: "Architecture & Practices",
     description:
-      "Component Architecture · Design Systems · Accessibility · Performance Optimization",
+      "Design Systems · Scalable UI Architecture · Accessibility (WCAG) · Performance Optimization · CMS-driven development",
     skills: [],
   },
   {
-    title: "UI & Creative",
+    title: "UI & Product Experience",
     description:
-      "Responsive Design · Tailwind CSS · Figma · Visual Consistency",
+      "Responsive Design · Tailwind CSS · Figma collaboration · Conversion-aware interfaces",
     skills: [
       { name: "Tailwind CSS", icon: "/tailwind-logo.png" },
       { name: "Figma", icon: "https://www.svgrepo.com/show/452202/figma.svg" },

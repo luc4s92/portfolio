@@ -18,12 +18,12 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta
-      name="description"
-      content="I'm a frontend developer with extensive expertise in JavaScript, HTML, and CSS, proficient in utilizing Next.js, TypeScript, React.js, Tailwind CSS, and Astro. Passionate about design and functionality, I focus on crafting dynamic and efficient web experiences. With a mastery of TypeScript and adeptness in design optimization using Tailwind CSS, I ensure high-quality, performant outcomes. Discover how I can elevate your project to the next level."
+      property="og:description"
+      content="Frontend Engineer specializing in scalable UI architecture, accessibility standards and performance-driven product experiences."
     />
     <meta
       name="keywords"
-      content="Frontend developer, JavaScript, HTML, CSS, Next.js, TypeScript, React.js, Tailwind CSS, Astro, Web development, Dynamic web design, Frontend optimization, Performance optimization"
+      content="Frontend Engineer, React, TypeScript, Next.js, Astro, UI Architecture, Accessibility, Performance Optimization, Design Systems"
     />
     <meta
       property="og:image"
@@ -33,19 +33,6 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <!-- Google tag (gtag.js) -->
-    <script
-      type="text/partytown"
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-9DXS85MZKZ"></script>
-    <script type="text/partytown">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-9DXS85MZKZ");
-    </script>
   </head>
   <body class="bg-primary-black">
     <Header />
@@ -54,7 +41,6 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
-  /* Reset sólido */
   *,
   *::before,
   *::after {
